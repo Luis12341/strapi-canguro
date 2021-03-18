@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nuestras_tiendas",
+  "info": {
+    "name": "Nuestras tiendas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "estado": {
+      "type": "string",
+      "required": true
+    },
+    "ciudad": {
+      "type": "string",
+      "required": true
+    },
+    "tienda": {
+      "type": "string",
+      "required": true
+    },
+    "latitud": {
+      "type": "float",
+      "required": true
+    },
+    "longitud": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nuestras-marcas",
+      "handler": "nuestras-marcas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nuestras-marcas/count",
+      "handler": "nuestras-marcas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nuestras-marcas/:id",
+      "handler": "nuestras-marcas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nuestras-marcas",
+      "handler": "nuestras-marcas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nuestras-marcas/:id",
+      "handler": "nuestras-marcas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nuestras-marcas/:id",
+      "handler": "nuestras-marcas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

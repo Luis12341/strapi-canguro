@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canguro_en_el_mundos",
+  "info": {
+    "name": "Canguro en el mundo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pais": {
+      "type": "string",
+      "required": true
+    },
+    "ubicacion": {
+      "type": "text"
+    },
+    "galeria": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

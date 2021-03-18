@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/canguro-en-el-mundos",
+      "handler": "canguro-en-el-mundo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canguro-en-el-mundos/count",
+      "handler": "canguro-en-el-mundo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/canguro-en-el-mundos/:id",
+      "handler": "canguro-en-el-mundo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/canguro-en-el-mundos",
+      "handler": "canguro-en-el-mundo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/canguro-en-el-mundos/:id",
+      "handler": "canguro-en-el-mundo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/canguro-en-el-mundos/:id",
+      "handler": "canguro-en-el-mundo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
