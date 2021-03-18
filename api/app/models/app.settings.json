@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "apps",
+  "info": {
+    "name": "App"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "link_android": {
+      "type": "string"
+    },
+    "img_android": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link_apple": {
+      "type": "string"
+    },
+    "img_apple": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
