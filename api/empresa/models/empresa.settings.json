@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "empresas",
   "info": {
-    "name": "Empresa"
+    "name": "empresa"
   },
   "options": {
     "increments": true,
@@ -10,19 +10,19 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "direccion": {
-      "type": "text"
-    },
-    "descripcion": {
+    "Direccion": {
       "type": "richtext"
     },
-    "correo": {
+    "Descripcion": {
+      "type": "richtext"
+    },
+    "Correo": {
       "type": "email"
     },
-    "telefono": {
+    "Telefono": {
       "type": "string"
     },
-    "logo": {
+    "Logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
