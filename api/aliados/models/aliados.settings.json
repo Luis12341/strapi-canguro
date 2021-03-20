@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "aliados",
   "info": {
-    "name": "Aliados"
+    "name": "Aliados",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,7 +20,7 @@
       "required": false
     },
     "imagen": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estados",
+  "info": {
+    "name": "Estados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "nuestras_tiendas": {
+      "via": "estado",
+      "collection": "nuestras-tiendas"
+    }
+  }
+}

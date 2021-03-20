@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "apps",
   "info": {
-    "name": "App"
+    "name": "App",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,19 +14,10 @@
     "link_android": {
       "type": "string"
     },
-    "img_android": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "link_apple": {
       "type": "string"
     },
-    "img_apple": {
+    "imagen_logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "canguro_en_el_mundos",
   "info": {
-    "name": "Canguro en el mundo"
+    "name": "Canguro en el mundo",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,8 +18,8 @@
     "ubicacion": {
       "type": "text"
     },
-    "galeria": {
-      "collection": "file",
+    "imagen": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "files",
